@@ -1,0 +1,2 @@
+# Digital-Signal-Processing----An-Introduction-to-Matlab
+A brief Matlab tutorial to help the user get started. It is important to note that Matlab uses a convention where the first element of an array, S, is S(1) and not S(0). This takes some getting used to as C, C++, JAVA and others use the zero-based indexing system. For this design, the user will use Matlab's object-oriented programming language to create a sequence class that solves this problem, allowing us to use the zero convention.

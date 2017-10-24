@@ -1,0 +1,14 @@
+  hlp = fir1(N-1, wc, hamming(N));
+        figure;
+        p = magdb_lab6(hlp);
+        title('Hamming-window lowpass filter');
+        hold on; dots = sevendots(p);
+        legend([dots(1) dots(2)], 'Row tones', 'Column tones');
+        plot([0 wc], [0 0], [wc wc], [0 -60], 'color', [0,0.5,0]);
+        hhp = - hlp;
+        hhp(M+1) = hhp(M+1) + 1;
+        figure;
+        p = magdb_lab6(hhp);
+        title('Hamming-window highpass filter');
+        hold on; sevendots(p);
+        plot([wc 0.5], [0 0], [wc wc], [0 -60], 'color', [0,0.5,0]);
